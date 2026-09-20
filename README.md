@@ -34,13 +34,13 @@ only empty `lecture`, `hw`, and `assessment` placeholders.
 ## Subjects
 
 - `real_analysis/`
-  - `sequences_limits_continuity/` - Topic 1
+  - `01_sequences_limits_continuity/` - Topic 1
 - `discrete_math/`
-  - `proofs_sets_relations_counting/` - Topic 1
+  - `01_proofs_sets_relations_counting/` - Topic 1
 - `diff_eq/`
-  - `first_order_odes_linear_systems/` - Topic 1
+  - `01_first_order_odes_linear_systems/` - Topic 1
 - `optimization/`
-  - `convexity_gradient_methods/` - Topic 1
+  - `01_convexity_gradient_methods/` - Topic 1
   - `02_unconstrained_newton_methods/` - Topic 2
   - `03_constrained_optimization_kkt/` - Topic 3
   - `04_linear_programming/` - Topic 4
@@ -53,13 +53,13 @@ only empty `lecture`, `hw`, and `assessment` placeholders.
   - `11_interior_point_methods/` - Topic 11 (graduate-level)
   - `12_advanced_variational_methods/` - Topic 12 (graduate-level)
 - `bayesian_ml/`
-  - `bayes_rule_conjugate_inference/` - Topic 1
+  - `01_bayes_rule_conjugate_inference/` - Topic 1
 - `complex_analysis/`
-  - `complex_functions_contours/` - Topic 1
+  - `01_complex_functions_contours/` - Topic 1
 - `continuous_stochastic_processes/`
-  - `brownian_motion_gaussian_processes/` - Topic 1
+  - `01_brownian_motion_gaussian_processes/` - Topic 1
 - `discrete_stochastic_processes/`
-  - `markov_chains_stationarity/` - Topic 1
+  - `01_markov_chains_stationarity/` - Topic 1
 
 The stochastic-process subjects emphasize intuition, modeling, simulation,
 and applications rather than proof-heavy treatment.
