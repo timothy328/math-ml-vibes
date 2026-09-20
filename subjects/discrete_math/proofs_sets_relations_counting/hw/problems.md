@@ -2,8 +2,8 @@
 
 ## Problem 1 — Proof translation (Easy)
 
-Let `P(n)` be the statement “if `n` is odd, then `n^2` is odd,” for an
-integer `n`.
+Let $P(n)$ be the statement “if $n$ is odd, then $n^2$ is odd,” for an
+integer $n$.
 
 1. Write the statement using quantifiers.
 2. Prove it directly.
@@ -13,8 +13,8 @@ integer `n`.
 
 Let `A`, `B`, and `C` be subsets of a universal set `U`.
 
-1. Prove `(A ∩ B)^c = A^c ∪ B^c`.
-2. Prove `A - (B ∪ C) = (A-B) ∩ (A-C)`.
+1. Prove $(A \cap B)^c = A^c \cup B^c$.
+2. Prove $A \setminus (B \cup C) = (A\setminus B) \cap (A\setminus C)$.
 3. Give a plain-language interpretation of each identity using dataset
    filters.
 
@@ -31,8 +31,8 @@ choose one of 4 model families.
 
 ## Problem 4 — Relations and equivalence classes (Medium)
 
-Define a relation on integers by `a ~ b` if and only if `a-b` is divisible by
-3.
+Define a relation on integers by $a \sim b$ if and only if $a-b$ is divisible
+by 3.
 
 1. Prove that `~` is an equivalence relation.
 2. Describe all equivalence classes.
@@ -50,4 +50,3 @@ vertices have degree 2.
    `B`, and 12 satisfy both. How many satisfy at least one rule?
 4. If 100 records are sampled uniformly, estimate the probability that a
    record satisfies exactly one of the two rules.
-

@@ -14,13 +14,13 @@ problems.
 A proposition is a statement that is either true or false. Common
 quantifiers are:
 
-- `∀ x ∈ S`: for every `x` in `S`
-- `∃ x ∈ S`: there exists an `x` in `S`
-- `∃! x ∈ S`: there exists exactly one `x` in `S`
+- $∀ x ∈ S$: for every $x$ in $S$
+- $∃ x ∈ S$: there exists an $x$ in $S$
+- $∃! x ∈ S$: there exists exactly one $x$ in $S$
 
 Negate quantifiers by switching them and negating the predicate:
 
-`¬(∀x, P(x))` is equivalent to `∃x such that ¬P(x)`.
+$\neg(\forall x,\ P(x))$ is equivalent to $\exists x$ such that $\neg P(x)$.
 
 ### Proof strategies
 
@@ -37,19 +37,19 @@ enough to reject it.
 
 ## Part 2 — Sets, functions, and relations
 
-For sets `A` and `B`, union, intersection, difference, and complement are
-defined elementwise. The power set `P(A)` is the set of all subsets of `A`;
-if `|A| = n`, then `|P(A)| = 2^n`.
+For sets $A$ and $B$, union, intersection, difference, and complement are
+defined elementwise. The power set $\mathcal{P}(A)$ is the set of all subsets
+of $A$; if $|A| = n$, then $|\mathcal{P}(A)| = 2^n$.
 
-A function `f: A -> B` assigns exactly one output in `B` to every input in
-`A`. It is injective if equal outputs imply equal inputs, and surjective if
-every element of `B` is achieved.
+A function $f:A\to B$ assigns exactly one output in $B$ to every input in $A$.
+It is injective if equal outputs imply equal inputs, and surjective if every
+element of $B$ is achieved.
 
-A relation `R` on `A` is:
+A relation $R$ on $A$ is:
 
-- reflexive if `aRa` for every `a`
-- symmetric if `aRb => bRa`
-- transitive if `aRb` and `bRc => aRc`
+- reflexive if $aRa$ for every $a$
+- symmetric if $aRb \Rightarrow bRa$
+- transitive if $aRb$ and $bRc \Rightarrow aRc$
 
 An equivalence relation is reflexive, symmetric, and transitive. It partitions
 the domain into equivalence classes.
@@ -57,15 +57,17 @@ the domain into equivalence classes.
 ## Part 3 — Counting and recurrences
 
 The addition rule handles disjoint alternatives; the multiplication rule
-handles sequential choices. For `n` distinct objects:
+handles sequential choices. For $n$ distinct objects:
 
-- ordered selections of `k`: `n!/(n-k)!`
-- unordered selections of `k`: `binom(n,k)`
-- subsets of any size: `2^n`
+- ordered selections of $k$: $\frac{n!}{(n-k)!}$
+- unordered selections of $k$: $\binom{n}{k}$
+- subsets of any size: $2^n$
 
 Use inclusion-exclusion for overlapping events:
 
-`|A ∪ B| = |A| + |B| - |A ∩ B|`.
+$$
+|A \cup B| = |A| + |B| - |A \cap B|.
+$$
 
 A recurrence defines a quantity from smaller instances. A standard proof of a
 closed form uses induction. In algorithm analysis, recurrence structure often
@@ -73,16 +75,17 @@ reveals whether a method is linear, logarithmic, or exponential.
 
 ## Part 4 — Graphs and discrete probability
 
-A graph `G=(V,E)` models entities and relationships. Degree counts incident
+A graph $G=(V,E)$ models entities and relationships. Degree counts incident
 edges. A path is a sequence of adjacent vertices; a connected graph has a
 path between every pair of vertices.
 
 For a finite sample space, probability is a normalized count. Conditional
 probability is:
 
-`P(A | B) = P(A ∩ B) / P(B)`, when `P(B) > 0`.
+$$
+P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \qquad P(B)>0.
+$$
 
-Independence means `P(A ∩ B)=P(A)P(B)`, not merely that the events look
+Independence means $P(A \cap B)=P(A)P(B)$, not merely that the events look
 unrelated. This distinction matters when evaluating data leakage and feature
 relationships.
-

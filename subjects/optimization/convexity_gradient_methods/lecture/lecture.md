@@ -9,11 +9,13 @@ optima, recognize convex structure, and derive gradient-descent updates.
 
 An optimization problem has an objective, decision variables, and constraints:
 
-`minimize f(x) subject to x ∈ C`.
+$$
+\underset{x \in C}{\operatorname{minimize}}\ f(x).
+$$
 
 A local minimum beats nearby feasible points; a global minimum beats every
-feasible point. A stationary point satisfies `∇f(x)=0`, but stationarity alone
-does not distinguish minima, maxima, and saddles.
+feasible point. A stationary point satisfies $\nabla f(x)=0$, but stationarity
+alone does not distinguish minima, maxima, and saddles.
 
 For twice-differentiable functions, the Hessian describes local curvature.
 Positive definite Hessian implies strict local convexity near a stationary
@@ -21,15 +23,21 @@ point; an indefinite Hessian indicates saddle-like curvature.
 
 ## Part 2 — Convex sets and functions
 
-A set `C` is convex when the line segment between any two points in `C` stays
-in `C`. A function is convex when:
+A set $C$ is convex when the line segment between any two points in $C$ stays
+in $C$. A function is convex when:
 
-`f(θx+(1-θ)y) ≤ θf(x)+(1-θ)f(y)` for `θ∈[0,1]`.
+$$
+f(\theta x+(1-\theta)y)
+\leq \theta f(x)+(1-\theta)f(y),
+\qquad \theta\in[0,1].
+$$
 
 For differentiable functions, convexity is equivalent to the first-order
 supporting-plane inequality:
 
-`f(y) ≥ f(x)+∇f(x)^T(y-x)`.
+$$
+f(y) \geq f(x)+\nabla f(x)^\mathsf{T}(y-x).
+$$
 
 For twice-differentiable functions on a convex domain, a positive
 semidefinite Hessian is sufficient for convexity. Every local minimum of a
@@ -40,9 +48,13 @@ convex function is global, though not necessarily unique.
 The gradient points in the direction of steepest local increase under the
 Euclidean norm. Taylor expansion gives:
 
-`f(x-η∇f(x)) ≈ f(x)-η||∇f(x)||²`.
+$$
+f(x-\eta\nabla f(x))
+\approx f(x)-\eta\lVert\nabla f(x)\rVert^2.
+$$
 
-Gradient descent repeatedly applies `x_{k+1}=x_k-η∇f(x_k)`. The step size
+Gradient descent repeatedly applies
+$x_{k+1}=x_k-\eta\nabla f(x_k)$. The step size
 controls stability. For an `L`-smooth convex objective, sufficiently small
 constant step sizes provide convergence guarantees; excessively large steps
 can oscillate or diverge.
@@ -50,10 +62,16 @@ can oscillate or diverge.
 ## Part 4 — Constraints and ML connections
 
 Equality constraints can be handled with Lagrange multipliers. For
-`min f(x)` subject to `g(x)=0`, the Lagrangian is `L(x,λ)=f(x)+λg(x)`.
+$$
+\min_x f(x)\quad\text{subject to}\quad g(x)=0,
+$$
+
+has Lagrangian
+$$
+L(x,\lambda)=f(x)+\lambda g(x).
+$$
 KKT conditions generalize this idea to inequalities.
 
 Regularized regression, maximum likelihood, and neural-network training are
 optimization problems. Always identify whether the objective is convex,
 whether constraints are present, and what assumptions support your algorithm.
-

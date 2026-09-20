@@ -4,7 +4,7 @@ No solutions are provided for assessments.
 
 ## Problem 1 — Stationarity and curvature
 
-Let `f(x,y)=x^2+4xy+5y^2-2x+6y`.
+Let $f(x,y)=x^2+4xy+5y^2-2x+6y$.
 
 1. Compute the gradient and Hessian.
 2. Find every stationary point.
@@ -15,7 +15,7 @@ Let `f(x,y)=x^2+4xy+5y^2-2x+6y`.
 
 ## Problem 2 — Convexity and inequalities
 
-Let `f(x)=log(1+e^x)`.
+Let $f(x)=\log(1+e^x)$.
 
 1. Compute the first and second derivatives.
 2. Prove convexity.
@@ -25,7 +25,7 @@ Let `f(x)=log(1+e^x)`.
 
 ## Problem 3 — Constrained optimization
 
-Minimize `x^2+2y^2+z^2` subject to `x+y+z=1` and `x≥0`.
+Minimize $x^2+2y^2+z^2$ subject to $x+y+z=1$ and $x\geq0$.
 
 1. Write the Lagrangian for the equality constraint.
 2. Solve the unconstrained equality-constrained problem.
@@ -35,7 +35,7 @@ Minimize `x^2+2y^2+z^2` subject to `x+y+z=1` and `x≥0`.
 
 ## Problem 4 — Gradient descent analysis
 
-For `f(x)=1/2 x^T A x`, where `A` is symmetric positive definite:
+For $f(x)=\frac12 x^\mathsf{T}Ax$, where $A$ is symmetric positive definite:
 
 1. Derive the iteration matrix for gradient descent.
 2. State a condition on `η` for convergence in terms of the largest
@@ -44,4 +44,3 @@ For `f(x)=1/2 x^T A x`, where `A` is symmetric positive definite:
 4. Compare fixed-step gradient descent with an exact line-search step for a
    quadratic.
 5. Describe one practical diagnostic for detecting an unstable step size.
-
