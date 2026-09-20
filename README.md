@@ -27,9 +27,10 @@ subject/
 - `hw/solutions.md` - all homework solutions
 - `assessment/` - quizzes, exams, and self-checks
 
-Populated topics use shortened descriptive names. Every subject now has a
-12-topic roadmap; Topic 1 is populated, while later topics currently contain
-only empty `lecture`, `hw`, and `assessment` placeholders.
+Populated topics use shortened descriptive names. The existing subjects have
+12-topic roadmaps with Topic 1 populated; later topics currently contain only
+empty `lecture`, `hw`, and `assessment` placeholders. New subjects may begin
+as folder-only roadmaps before their lessons are developed.
 
 ## Subjects
 
@@ -60,9 +61,32 @@ only empty `lecture`, `hw`, and `assessment` placeholders.
   - `01_brownian_motion_gaussian_processes/` - Topic 1
 - `discrete_stochastic_processes/`
   - `01_markov_chains_stationarity/` - Topic 1
+- `abstract_linear_algebra/`
+  - `01_vectors_matrices_linear_systems/` - Topic 1
+  - `02_vector_spaces_subspaces_bases/` - Topic 2
+  - `03_linear_maps_change_of_basis/` - Topic 3
+  - `04_inner_products_orthogonality/` - Topic 4
+  - `05_least_squares_qr_factorization/` - Topic 5
+  - `06_determinants_eigenvalues/` - Topic 6
+  - `07_diagonalization_spectral_theory/` - Topic 7
+  - `08_symmetric_matrices_svd/` - Topic 8
+  - `09_positive_definite_matrices/` - Topic 9
+  - `10_matrix_norms_conditioning/` - Topic 10
+  - `11_linear_algebra_probability_statistics/` - Topic 11
+  - `12_matrix_computations_applications/` - Topic 12
 
 The stochastic-process subjects emphasize intuition, modeling, simulation,
 and applications rather than proof-heavy treatment.
+
+### Abstract Linear Algebra roadmap
+
+The Abstract Linear Algebra sequence is an undergraduate bridge between
+applied linear algebra and proof-oriented graduate mathematics or statistics.
+It emphasizes precise definitions and reasoning while retaining computational
+examples involving least squares, eigendecompositions, singular value
+decompositions, positive-definite matrices, conditioning, and statistical
+models. The final topics connect the theory to probability, statistics, and
+reliable matrix computation without assuming a graduate algebra course.
 
 ## Claude generation skills
 
