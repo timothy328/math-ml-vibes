@@ -27,8 +27,9 @@ subject/
 - `hw/solutions.md` - all homework solutions
 - `assessment/` - quizzes, exams, and self-checks
 
-Populated topics use shortened descriptive names. Every subject now includes
-Topic 1 lecture notes, homework, worked solutions, and an assessment.
+Populated topics use shortened descriptive names. Every subject now has a
+12-topic roadmap; Topic 1 is populated, while later topics currently contain
+only empty `lecture`, `hw`, and `assessment` placeholders.
 
 ## Subjects
 
@@ -62,6 +63,19 @@ Topic 1 lecture notes, homework, worked solutions, and an assessment.
 
 The stochastic-process subjects emphasize intuition, modeling, simulation,
 and applications rather than proof-heavy treatment.
+
+## Claude generation skills
+
+Reusable Claude skills for extending the curriculum live under
+`.claude/skills/`:
+
+- `generate-lecture/` - creates prerequisite-aware lecture notes
+- `generate-hw-problems/` - creates one consolidated homework problem file
+- `generate-hw-solutions/` - creates one consolidated worked-solution file
+- `generate-assessment/` - creates a multi-part assessment without answers
+- `generate-topic/` - creates a complete topic package from a subject
+
+All four skills follow the repository's readable Markdown LaTeX convention.
 
 ### Optimization roadmap
 
