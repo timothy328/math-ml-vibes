@@ -27,8 +27,8 @@ subject/
 - `hw/solutions.md` - all homework solutions
 - `assessment/` - quizzes, exams, and self-checks
 
-Populated topics use shortened descriptive names. Subjects without written
-materials yet retain the `topic_1/` placeholder.
+Populated topics use shortened descriptive names. Every subject now includes
+Topic 1 lecture notes, homework, worked solutions, and an assessment.
 
 ## Subjects
 
@@ -37,15 +37,38 @@ materials yet retain the `topic_1/` placeholder.
 - `discrete_math/`
   - `proofs_sets_relations_counting/` - Topic 1
 - `diff_eq/`
+  - `first_order_odes_linear_systems/` - Topic 1
 - `optimization/`
   - `convexity_gradient_methods/` - Topic 1
+  - `02_unconstrained_newton_methods/` - Topic 2
+  - `03_constrained_optimization_kkt/` - Topic 3
+  - `04_linear_programming/` - Topic 4
+  - `05_quadratic_programming/` - Topic 5
+  - `06_duality_sensitivity/` - Topic 6
+  - `07_least_squares_regularization/` - Topic 7
+  - `08_coordinate_proximal_methods/` - Topic 8
+  - `09_stochastic_optimization/` - Topic 9
+  - `10_dynamic_programming/` - Topic 10
+  - `11_interior_point_methods/` - Topic 11 (graduate-level)
+  - `12_advanced_variational_methods/` - Topic 12 (graduate-level)
 - `bayesian_ml/`
+  - `bayes_rule_conjugate_inference/` - Topic 1
 - `complex_analysis/`
+  - `complex_functions_contours/` - Topic 1
 - `continuous_stochastic_processes/`
+  - `brownian_motion_gaussian_processes/` - Topic 1
 - `discrete_stochastic_processes/`
+  - `markov_chains_stationarity/` - Topic 1
 
 The stochastic-process subjects emphasize intuition, modeling, simulation,
 and applications rather than proof-heavy treatment.
+
+### Optimization roadmap
+
+The Optimization sequence contains 12 topics. Topics 1–10 are primarily
+undergraduate material with direct connections to machine learning, numerical
+methods, operations research, and control. Topics 11–12 are optional
+graduate-level extensions.
 
 ## Python setup
 
